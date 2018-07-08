@@ -15,7 +15,6 @@ Contents
     1_system_architecture
 
 
-
 About the project
 -----------------
 
@@ -40,8 +39,3 @@ The Jaibik Map Project seeks to achieve the following outcomes upon the project'
  -Incorporating all of the aforementioned data (Objectives 1 and 2), develop an interactive, slippy (with zooming capability), open data web-based map and associated Android Phone application to enable the public to submit opportunistic photographs of mammal sightings to the JaibikMap. Disseminate the product and train stakeholders in its use, and provide protocols among stakeholders for its continual application.
 
  - Ensure the project translates to impacts on USAID development objectives through capacity development, information dissemination/integration, and sustainability measures.
-
-.. toctree::
-    :maxdepth: 2
-
-    1_system_architecture
