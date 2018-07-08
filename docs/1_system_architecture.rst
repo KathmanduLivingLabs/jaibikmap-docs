@@ -6,7 +6,7 @@ Please note that this page only describes the specification for the project's fi
 Challenges
 ----------
 
-For each mammal, the outputs generated during the modeling exercise comprise of raster (TIFF) files at a 1km*1km resolution for the whole of Nepal across two different climate change scenarios, and 3 time periods.
+For each mammal, the outputs generated during the modeling exercise comprise of raster (TIFF) files at a :code:`1km*1km` resolution for the whole of Nepal across two different climate change scenarios, and 3 time periods.
 
 Based on this understanding, it was clear that serving such large datasets for smooth, interactive viewing in the web browser was one the major challenges that we needed to address. It was what one would called an optimization problem. How could we ensure that all of the information generated can be quickly made available to the user, while at the same time ensuring that the resolution of the data is not compromised?
 
