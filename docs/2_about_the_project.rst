@@ -20,6 +20,6 @@ The Jaibik Map Project seeks to achieve the following outcomes upon the project'
 
  - Model changes in Nepal’s forest cover, composition and distribution in light of various future climate change (emissions) scenarios. Conduct innovative species distribution modelling based on the results. Build capacity at all levels for the model’s uptake and general conservation.
 
- -Incorporating all of the aforementioned data (Objectives 1 and 2), develop an interactive, slippy (with zooming capability), open data web-based map and associated Android Phone application to enable the public to submit opportunistic photographs of mammal sightings to the JaibikMap. Disseminate the product and train stakeholders in its use, and provide protocols among stakeholders for its continual application.
+ - Incorporating all of the aforementioned data (Objectives 1 and 2), develop an interactive, slippy (with zooming capability), open data web-based map and associated Android Phone application to enable the public to submit opportunistic photographs of mammal sightings to the JaibikMap. Disseminate the product and train stakeholders in its use, and provide protocols among stakeholders for its continual application.
 
  - Ensure the project translates to impacts on USAID development objectives through capacity development, information dissemination/integration, and sustainability measures.
