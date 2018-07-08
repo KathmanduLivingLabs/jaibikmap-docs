@@ -28,8 +28,7 @@
 
      - Ensure the project translates to impacts on USAID development objectives through capacity development, information dissemination/integration, and sustainability measures.
 
+.. toctree::
+    :maxdepth: 2
 
-     .. toctree::
-        :maxdepth: 2
-
-        1_system_architecture
+    1_system_architecture

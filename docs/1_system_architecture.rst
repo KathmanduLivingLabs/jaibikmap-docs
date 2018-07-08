@@ -24,4 +24,4 @@ Proposed system
 
 The above diagram outlines the overall system architecture followed in Jaibik Map.
 
-As already explained in the previous section, the technical team has used a vector tile server based  architecture to serve geospatial data for consumption in the web and mobile applications.  
+As already explained in the previous section, the technical team has used a vector tile server based  architecture to serve geospatial data for consumption in the web and mobile applications.
