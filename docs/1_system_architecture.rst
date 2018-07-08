@@ -19,9 +19,26 @@ After a fair amount of research by the technical team, it was clear that the use
 Proposed system
 ---------------
 
+The flowchart below outlines the overall system architecture followed in Jaibik Map.
+
 .. image:: _data/system_architecture.png
     :alt: Architecture diagram for the Jaibik Map system
 
-The above diagram outlines the overall system architecture followed in Jaibik Map.
 
-As already explained in the previous section, the technical team has used a vector tile server based  architecture to serve geospatial data for consumption in the web and mobile applications.
+As already explained in the previous section, the technical team has used a vector tile server based  architecture to serve geospatial data for consumption in the web and mobile applications. In addition, the team also developed a second API endpoint to serve detailed textual information on all species.
+
+**Serving map data**
+********************
+
+The first step involves the conversion of TIFF files (raster) generated from the modeling exercise to vector tiles (MBTiles). To do so, the coordinate system of the TIFF files was first transformed  into the EPGS:4326 coordinate system using the `ogr2ogr <http://www.gdal.org/ogr2ogr.html>`_ utility which is part of `Geometric Data Abstraction Library <http://www.gdal.org/>`_ . After this, the updated TIFF files were first converted into shapefiles and then finally converted to vector tiles in MBTiles format using `Tippecanoe <https://github.com/mapbox/tippecanoe>`_.
+
+The second step then involves serving these vector tiles through a server. To do so, the techical team has made use of `TileServer GL <http://tileserver.org/>`_, which supports both serving vector as well as raster tiles (through Mapbox GL Native).
+
+As a result of this exercise, each mammalian species have five corresponding vector tiles to show species distribution in different climate change and time period scenarios. The current version of the tile server can be found `here <http://159.65.10.210:8090/>`_.
+
+**Serving mammalian species profile data**
+******************************************
+
+In addition to serving map data, the Jaibik Map tool also allows users to view  detailed information on all 74 mammalian species. To do so, the team setup a Google Sheets based information upload mechanism to facilitate easy data upload/updation for non-technical team members.
+
+Information uploaded in the Google Sheet was then converted to web-friendly  JSON(Javascript Object Notation). After this, the information was then stored in PostgreSQL database, and species information was then served through API endpoint to facilitate easy, secure consumption by the citizen facing web and mobile apps. Documentation for the API endpoint can be found `in this location <http://159.65.10.210:8080/api/docs/>`_.
