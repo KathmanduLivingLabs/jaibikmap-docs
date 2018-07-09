@@ -16,4 +16,5 @@ Please use the links below to navigate through different sections of this websit
     :maxdepth: 2
 
     2_about_the_project
+    3_project_plan
     1_system_architecture
